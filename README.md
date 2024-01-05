@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# React E-commerce Application using token authentication
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the React E-commerce Application! This application provides a full-fledged e-commerce experience with user authentication, product browsing, and a shopping cart.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+### Prerequisites
 
-### `npm start`
+Make sure you have Node.js and npm installed on your machine.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js: [Download Node.js](https://nodejs.org/)
+- npm: Included with Node.js installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone https://github.com/yourusername/react-e-commerce-app.git
+    cd react-e-commerce-app
+    ```
 
-### `npm run build`
+2. Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Run the application:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm start
+    ```
 
-### `npm run eject`
+    The application will be accessible at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **`src/App.js`:** Main component handling routing using React Router.
+- **`src/AuthService.js`:** Manages user authentication, login, logout, and token retrieval.
+- **`src/Cart.js`:** Displays the shopping cart, allows item removal, and calculates the total price.
+- **`src/CartItem.js`:** Represents an individual item in the shopping cart.
+- **`src/Home.js`:** Displays the product catalog, with filtering options, and allows users to add products to their cart.
+- **`src/Login.js`:** Handles user login, redirecting users to the home page upon successful login.
+- **`src/Logout.js`:** Provides a logout button to log users out of the application.
+- **`src/Product.js`:** Represents a product, allowing users to add it to their cart.
+- **`src/Protected.js`:** A higher-order component (HOC) ensuring only authenticated users can access certain routes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Application Flow
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Users start on the login page where they enter their credentials.
+2. Upon successful login, users are redirected to the home page.
+3. The home page displays products with options to filter by name and price range.
+4. Users can add products to their shopping cart.
+5. The cart page shows the added items, allows users to remove items, and displays the total price.
+6. Users can log out from any page using the logout button.
 
-## Learn More
+## Dummy Credentials for Testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Username:** kminchelle
+- **Password:** 0lelplR
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Customize and Contribute
 
-### Code Splitting
+Feel free to explore the code and customize the application based on your needs. If you encounter any issues or have suggestions, please open an issue or submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy coding!
