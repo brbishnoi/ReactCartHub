@@ -17,7 +17,7 @@ Make sure you have Node.js and npm installed on your machine.
 
     ```bash
     git clone https://github.com/brbishnoi/ReactCartHub.git
-    cd react-e-commerce-app
+    cd ReactCartHub
     ```
 
 2. Install dependencies:
